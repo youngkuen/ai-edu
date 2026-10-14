@@ -4,16 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>재직자 AI 실무교육 안내 | 동의과학대학교 DIT AI허브센터</title>
-<meta name="description" content="학과 가족회사 재직자를 위한 ChatGPT Pro 활용 AI 실무교육 안내 및 참가 신청 (교육비 무료)">
+<meta name="description" content="ChatGPT Pro 활용 재직자 AI 실무교육 (교육비 무료) · 전공심화 저녁반, 전공심화 수업 연계, 학과 가족회사 신청 안내">
 <meta property="og:title" content="재직자 AI 실무교육 안내 (교육비 무료)">
-<meta property="og:description" content="ChatGPT Pro로 내 업무에 AI를 직접 써 보는 실습 교육 · 동의과학대학교 DIT AI허브센터">
+<meta property="og:description" content="전공심화 저녁반 · 수업 연계 · 학과 가족회사, 해당하는 곳에서 바로 신청하세요">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
-  :root {
-    --navy: #1F3A5F; --ink: #1d232b; --sub: #5b6470; --line: #e3e7ec; --pale: #f4f6f9; --accent: #c8102e;
-  }
+  :root { --navy: #1F3A5F; --ink: #1d232b; --sub: #5b6470; --line: #e3e7ec; --pale: #f4f6f9; }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
   body { margin: 0; background: #fff; color: var(--ink); font-family: Pretendard, "Malgun Gothic", "맑은 고딕", sans-serif;
          font-size: 16px; line-height: 1.7; word-break: keep-all; }
   a { color: inherit; }
@@ -23,67 +21,83 @@
   header img { height: 28px; width: auto; display: block; }
   header span { font-size: 13px; color: var(--sub); }
 
-  .hero { padding: 44px 0 36px; border-bottom: 1px solid var(--line); }
+  .hero { padding: 40px 0 34px; border-bottom: 1px solid var(--line); }
   .eyebrow { font-size: 15px; font-weight: 600; color: var(--navy); margin: 0 0 10px; }
-  h1 { font-size: 27px; line-height: 1.35; margin: 0 0 14px; font-weight: 800; letter-spacing: -0.02em; }
+  h1 { font-size: 27px; line-height: 1.35; margin: 0 0 12px; font-weight: 800; letter-spacing: -0.02em; }
   h1 em { font-style: normal; color: var(--navy); }
   .nw { white-space: nowrap; }
-  .lead { font-size: 17px; color: var(--sub); margin: 0 0 24px; }
-  .facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; padding: 0; list-style: none; }
-  .facts li { background: var(--pale); color: var(--navy); font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 4px; }
+  .lead { font-size: 17px; color: var(--sub); margin: 0 0 22px; }
+  .q { font-size: 15px; font-weight: 700; margin: 0 0 10px; }
+  .routes { display: grid; gap: 10px; }
+  .route { display: flex; align-items: center; gap: 14px; text-decoration: none; border: 1.5px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .route:active, .route:hover { border-color: var(--navy); }
+  .route .no { flex: 0 0 30px; height: 30px; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 700; font-size: 14px;
+               display: flex; align-items: center; justify-content: center; }
+  .route b { display: block; font-size: 16px; }
+  .route span { display: block; font-size: 14px; color: var(--sub); line-height: 1.5; }
+  .route i { margin-left: auto; font-style: normal; color: var(--navy); font-size: 20px; }
+
+  section { padding: 40px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 8px; }
+  .kicker { font-size: 13px; font-weight: 700; color: #fff; background: var(--navy); display: inline-block; padding: 2px 10px; border-radius: 4px; margin: 0 0 10px; }
+  h2 { font-size: 22px; margin: 0 0 8px; font-weight: 800; color: var(--ink); }
+  .desc { color: var(--sub); margin: 0 0 20px; }
+  h3.sub { font-size: 17px; color: var(--navy); margin: 26px 0 10px; }
+
+  .week { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 0 0 18px; }
+  .week div { border-radius: 6px; padding: 10px 6px; text-align: center; }
+  .week b { display: block; font-size: 14px; }
+  .week span { font-size: 18px; font-weight: 800; }
+  .lv1 { background: #e3f1ef; color: #0f6e77; } .lv2 { background: #e3ebf7; color: #1f5799; } .lv3 { background: #fbe9df; color: #b4521c; }
+
+  table.info { width: 100%; border-collapse: collapse; font-size: 15px; margin: 0 0 22px; }
+  .info th, .info td { text-align: left; padding: 10px 0; border-top: 1px solid var(--line); vertical-align: top; }
+  .info tr:first-child th, .info tr:first-child td { border-top: 0; }
+  .info th { width: 84px; color: var(--navy); font-weight: 600; white-space: nowrap; padding-right: 12px; }
+
+  .tt { width: 100%; border-collapse: collapse; font-size: 15px; text-align: center; }
+  .tt th, .tt td { border-bottom: 1px solid var(--line); padding: 9px 4px; }
+  .tt thead th { font-size: 14px; border-bottom: 2px solid var(--navy); }
+  .tt thead th small { display: block; font-weight: 600; }
+  .tt tbody th { font-weight: 500; color: var(--sub); font-size: 13px; text-align: left; white-space: nowrap; }
+  .tt .d { font-weight: 700; }
+  .tt .off { color: #b03a3a; font-size: 13px; }
+  .tt .off small { font-size: 12px; }
+  .tt .none { color: #c4cad2; }
+  .h1c { color: #0f6e77; } .h2c { color: #1f5799; } .h3c { color: #b4521c; }
+  details.tt-box { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin: 0 0 22px; }
+  details.tt-box summary { cursor: pointer; font-weight: 700; color: var(--navy); list-style: none; }
+  details.tt-box summary::-webkit-details-marker { display: none; }
+  details.tt-box summary::after { content: " 펼치기 ▾"; font-weight: 500; font-size: 14px; color: var(--sub); }
+  details.tt-box[open] summary::after { content: " 접기 ▴"; }
+  details.tt-box .tt { margin-top: 10px; }
+  .tt-note { font-size: 13px; color: var(--sub); margin: 10px 0 0; }
+
   .btn { display: block; text-align: center; background: var(--navy); color: #fff; text-decoration: none; font-weight: 700;
-         font-size: 18px; padding: 16px; border-radius: 6px; }
-  .btn:active { opacity: .85; }
+         font-size: 17px; padding: 15px; border-radius: 6px; }
+  .btn.off { background: #9aa4b1; }
   .btn-note { text-align: center; font-size: 13px; color: var(--sub); margin: 10px 0 0; }
 
-  section { padding: 40px 0; border-bottom: 1px solid var(--line); }
-  h2 { font-size: 21px; margin: 0 0 18px; font-weight: 700; color: var(--navy); }
-  .items { list-style: none; margin: 0; padding: 0; }
-  .items li { display: flex; gap: 14px; padding: 16px 0; border-top: 1px solid var(--line); }
-  .items li:first-child { border-top: 0; padding-top: 0; }
-  .num { flex: 0 0 28px; height: 28px; border: 1.5px solid var(--navy); border-radius: 50%; color: var(--navy);
-         font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
-  .items h3 { font-size: 17px; margin: 0 0 2px; }
-  .items p { margin: 0; color: var(--sub); font-size: 15px; }
-  .ex { margin: 22px 0 0; padding: 16px 18px; background: var(--pale); border-radius: 6px; font-size: 15px; }
-  .ex strong { color: var(--navy); }
-  .ex ul { margin: 6px 0 0; padding-left: 18px; color: var(--sub); }
+  .course { border-top: 1px solid var(--line); padding: 14px 0; }
+  .course:first-of-type { border-top: 0; padding-top: 0; }
+  .tag { display: inline-block; font-size: 13px; font-weight: 700; padding: 1px 10px; border-radius: 4px; margin-right: 6px; }
+  .course h4 { font-size: 17px; margin: 0 0 4px; }
+  .course p { margin: 0; color: var(--sub); font-size: 15px; }
+  .note { font-size: 13px; color: var(--sub); margin: 12px 0 0; }
 
-  table { width: 100%; border-collapse: collapse; font-size: 15px; }
-  th, td { text-align: left; padding: 12px 0; border-top: 1px solid var(--line); vertical-align: top; }
-  tr:first-child th, tr:first-child td { border-top: 0; }
-  th { width: 92px; color: var(--navy); font-weight: 600; white-space: nowrap; padding-right: 12px; }
-
-  .steps { list-style: none; margin: 0; padding: 0; counter-reset: s; }
-  .steps li { position: relative; padding: 0 0 18px 40px; }
-  .steps li::before { counter-increment: s; content: counter(s); position: absolute; left: 0; top: 1px; width: 26px; height: 26px;
-                      border-radius: 50%; background: var(--navy); color: #fff; font-size: 13px; font-weight: 700;
-                      display: flex; align-items: center; justify-content: center; }
-  .steps li:last-child { padding-bottom: 0; }
-  .steps b { display: block; font-size: 16px; }
-  .steps span { color: var(--sub); font-size: 15px; }
-
-  details { border-top: 1px solid var(--line); padding: 14px 0; }
-  details:first-of-type { border-top: 0; padding-top: 0; }
-  summary { cursor: pointer; font-weight: 600; list-style: none; position: relative; padding-right: 24px; }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: "+"; position: absolute; right: 0; top: -1px; color: var(--navy); font-size: 20px; font-weight: 400; }
-  details[open] summary::after { content: "−"; }
-  details p { margin: 8px 0 0; color: var(--sub); font-size: 15px; }
-
-  .apply { text-align: center; }
-  .apply .qr { display: none; margin: 24px auto 6px; width: 150px; height: 150px; }
-  .apply .qr-note { display: none; font-size: 13px; color: var(--sub); }
-  @media (min-width: 760px) {
-    h1 { font-size: 36px; }
-    .apply .qr, .apply .qr-note { display: block; }
-  }
+  details.faq { border-top: 1px solid var(--line); padding: 14px 0; }
+  details.faq:first-of-type { border-top: 0; padding-top: 0; }
+  details.faq summary { cursor: pointer; font-weight: 600; list-style: none; position: relative; padding-right: 24px; }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after { content: "+"; position: absolute; right: 0; top: -1px; color: var(--navy); font-size: 20px; font-weight: 400; }
+  details.faq[open] summary::after { content: "−"; }
+  details.faq p { margin: 8px 0 0; color: var(--sub); font-size: 15px; }
+  .top { display: block; text-align: right; font-size: 13px; color: var(--sub); margin: 18px 0 0; text-decoration: none; }
+  @media (min-width: 760px) { h1 { font-size: 34px; } }
   footer { padding: 28px 0 40px; font-size: 14px; color: var(--sub); }
   footer p { margin: 2px 0; }
-  .note { font-size: 13px; color: var(--sub); margin: 14px 0 0; }
 </style>
 </head>
-<body>
+<body id="top">
 
 <header>
   <div class="wrap">
@@ -95,81 +109,118 @@
 <main>
   <div class="hero">
     <div class="wrap">
-      <p class="eyebrow">학과 가족회사 재직자 대상</p>
-      <h1><span class="nw"><em>ChatGPT Pro</em>로</span> <span class="nw">내 업무에 AI를</span> <span class="nw">직접 써 보는</span> <span class="nw">실무교육</span></h1>
+      <p class="eyebrow">2026 재직자 AI 실무교육 · 교육비 무료</p>
+      <h1><span class="nw"><em>ChatGPT Pro</em>로</span> <span class="nw">내 업무에 AI를</span> <span class="nw">직접 써 보는 실무교육</span></h1>
       <p class="lead">AI를 처음 써 보는 분도 괜찮습니다. 실제로 하고 계신 업무를 가지고 문서 작성, 자료 정리 등을 함께 실습합니다.</p>
-      <ul class="facts">
-        <li>교육비 무료</li>
-        <li>회당 2시간 내외</li>
-        <li>실습 중심</li>
-      </ul>
-      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdHr-Ex0Y5-UB8LRKUg2V6JEqo8_GNEsuNsfs8f7ro4Y-r97g/viewform">참가 신청하기</a>
-      <p class="btn-note">신청은 1분 정도 걸립니다. 교육 일정은 신청 후 따로 안내드립니다.</p>
+      <p class="q">해당하는 곳을 눌러 주세요</p>
+      <div class="routes">
+        <a class="route" href="#evening"><div class="no">1</div><div><b>전공심화 재학생 (재직자)</b><span>평일 저녁 시간표를 보고 원하는 날짜에 신청</span></div><i>›</i></a>
+        <a class="route" href="#class"><div class="no">2</div><div><b>전공심화 담당 교수님</b><span>정규 수업 시간에 AI 교육 진행 요청</span></div><i>›</i></a>
+        <a class="route" href="#family"><div class="no">3</div><div><b>학과 가족회사 직원</b><span>회사 직원 교육 참가 신청</span></div><i>›</i></a>
+      </div>
     </div>
   </div>
 
+  <!-- 1. 저녁반 -->
+  <section id="evening">
+    <div class="wrap">
+      <p class="kicker">1 · 전공심화 재학생</p>
+      <h2>저녁반 시간표 신청</h2>
+      <p class="desc">퇴근 후 저녁 2시간, 요일마다 정해진 과정이 매주 열립니다. 들을 수 있는 날짜를 골라 신청하세요.</p>
+      <div class="week">
+        <div class="lv1"><b>월요일</b><span>기초</span></div>
+        <div class="lv2"><b>수요일</b><span>중급</span></div>
+        <div class="lv3"><b>금요일</b><span>고급</span></div>
+      </div>
+      <table class="info">
+        <tr><th>시간</th><td>매주 월·수·금 19:00~21:00</td></tr>
+        <tr><th>기간</th><td>10. 26.(월) ~ 12. 18.(금), 10/30 휴강</td></tr>
+        <tr><th>장소</th><td>DIT AI허브센터 AI 실습실 (예정)</td></tr>
+        <tr><th>정원</th><td>회차별 20명 선착순</td></tr>
+      </table>
+      <details class="tt-box">
+        <summary>날짜별 시간표</summary>
+        <table class="tt">
+          <thead><tr><th></th><th class="h1c">월<small>기초</small></th><th class="h2c">수<small>중급</small></th><th class="h3c">금<small>고급</small></th></tr></thead>
+          <tbody>
+            <tr><th>10/26 주</th><td><span class="d">10/26</span></td><td><span class="d">10/28</span></td><td class="off">10/30<br><small>휴강(해커톤)</small></td></tr>
+            <tr><th>11/2 주</th><td><span class="d">11/2</span></td><td><span class="d">11/4</span></td><td><span class="d">11/6</span></td></tr>
+            <tr><th>11/9 주</th><td><span class="d">11/9</span></td><td><span class="d">11/11</span></td><td><span class="d">11/13</span></td></tr>
+            <tr><th>11/16 주</th><td><span class="d">11/16</span></td><td><span class="d">11/18</span></td><td><span class="d">11/20</span></td></tr>
+            <tr><th>11/23 주</th><td><span class="d">11/23</span></td><td><span class="d">11/25</span></td><td><span class="d">11/27</span></td></tr>
+            <tr><th>11/30 주</th><td><span class="d">11/30</span></td><td><span class="d">12/2</span></td><td><span class="d">12/4</span></td></tr>
+            <tr><th>12/7 주</th><td><span class="d">12/7</span></td><td><span class="d">12/9</span></td><td><span class="d">12/11</span></td></tr>
+            <tr><th>12/14 주</th><td><span class="d">12/14</span></td><td><span class="d">12/16</span></td><td><span class="d">12/18</span></td></tr>
+          </tbody>
+        </table>
+        <p class="tt-note">총 23회 (기초 8회, 중급 8회, 고급 7회)</p>
+      </details>
+      <span class="btn off">저녁반 신청서 준비 중 (곧 열립니다)</span>
+      <p class="btn-note">여러 회차를 함께 신청할 수 있고, 마감된 회차는 신청서에서 자동으로 빠집니다.</p>
+    </div>
+  </section>
+
+  <!-- 2. 수업 연계 -->
+  <section id="class">
+    <div class="wrap">
+      <p class="kicker">2 · 전공심화 담당 교수님</p>
+      <h2>정규 수업 시간에 교육 요청</h2>
+      <p class="desc">전공심화 수업 시간 중 2시간 정도를 내어 주시면, 그 시간에 학생들을 대상으로 AI 교육을 진행해 드립니다. 강사와 교육 준비는 AI허브센터에서 맡습니다.</p>
+      <table class="info">
+        <tr><th>시간</th><td>회당 2시간 내외 (수업 일정에 맞춰 협의)</td></tr>
+        <tr><th>과정</th><td>기초·중급·고급 중 선택 또는 학과 직무에 맞춰 협의</td></tr>
+        <tr><th>장소</th><td>DIT AI허브센터 AI 실습실 (협의 가능)</td></tr>
+      </table>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSemiM_3XodbxonS8sigt-xi_Zhds1s_Ayp_8lJuriVGqS9Ogg/viewform">수업 시간 교육 요청하기</a>
+      <p class="btn-note">수업 과목, 요일·시간, 대략적인 인원을 적어 주시면 따로 연락드려 날짜를 정합니다. (2분 정도)</p>
+    </div>
+  </section>
+
+  <!-- 3. 가족회사 -->
+  <section id="family">
+    <div class="wrap">
+      <p class="kicker">3 · 학과 가족회사 직원</p>
+      <h2>가족회사 교육 참가 신청</h2>
+      <p class="desc">동의과학대학교 학과 가족회사 재직자분들도 같은 교육을 받으실 수 있습니다. 신청 현황을 모아 학과와 협의해 일정을 정한 뒤 연락드립니다.</p>
+      <table class="info">
+        <tr><th>시간</th><td>회당 2시간 내외</td></tr>
+        <tr><th>일정</th><td>신청 현황을 반영하여 협의 후 개별 안내</td></tr>
+        <tr><th>장소</th><td>DIT AI허브센터 AI 실습실 (예정)</td></tr>
+        <tr><th>인원</th><td>반당 20명 내외</td></tr>
+      </table>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdHr-Ex0Y5-UB8LRKUg2V6JEqo8_GNEsuNsfs8f7ro4Y-r97g/viewform">가족회사 참가 신청하기</a>
+      <p class="btn-note">같은 회사 직원도 각자 신청해 주세요. (1분 정도)</p>
+    </div>
+  </section>
+
+  <!-- 공통: 교육 내용 -->
   <section>
     <div class="wrap">
       <h2>무엇을 배우나요</h2>
-      <ul class="items">
-        <li><div class="num">1</div><div><h3>실무 문서 작성</h3><p>보고서, 기획서, 업무 매뉴얼, 발표자료 작성과 회의 내용 정리</p></div></li>
-        <li><div class="num">2</div><div><h3>데이터 분석 및 업무 효율화</h3><p>Excel 자료 분석·시각화, 반복 업무를 줄이는 방법 찾기</p></div></li>
-        <li><div class="num">3</div><div><h3>직무별 활용 실습</h3><p>제조·기술, 보건·의료, 경영·서비스, 복지·교육 등 하시는 일에 맞춘 실습</p></div></li>
-        <li><div class="num">4</div><div><h3>내 업무에 AI 적용하기</h3><p>본인 업무로 AI 활용 사례를 직접 만들고, 결과물을 검토하는 방법</p></div></li>
-      </ul>
-      <div class="ex">
-        <strong>예를 들면 이런 걸 해 봅니다</strong>
-        <ul>
-          <li>설비 점검 메모를 정리해 보고서 초안 만들기</li>
-          <li>월별 매출 엑셀 자료에서 핵심 내용 요약하기</li>
-          <li>고객 안내문, 교육자료 초안 빠르게 만들기</li>
-        </ul>
+      <p class="desc">세 과정 모두 ChatGPT Pro로 실제 업무를 직접 해 보는 실습 중심입니다.</p>
+      <div class="course">
+        <h4><span class="tag lv1">기초</span>AI 시작하기와 실무 문서 작성</h4>
+        <p>ChatGPT Pro 기본 사용법, 보고서·기획서·업무 매뉴얼 초안 작성, 회의 내용 정리</p>
       </div>
-      <p class="note">※ 세부 교육내용은 참여하시는 분들의 직무와 수요에 맞춰 조정될 수 있습니다.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2>교육 안내</h2>
-      <table>
-        <tr><th>대상</th><td>동의과학대학교 학과 가족회사 재직자</td></tr>
-        <tr><th>교육비</th><td>무료</td></tr>
-        <tr><th>시간</th><td>회당 2시간 내외</td></tr>
-        <tr><th>장소</th><td>동의과학대학교 DIT AI허브센터 AI 실습실 (예정)</td></tr>
-        <tr><th>일정</th><td>신청 현황을 반영하여 학과와 협의 후 개별 안내</td></tr>
-        <tr><th>인원</th><td>반당 20명 내외</td></tr>
-      </table>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2>신청 방법</h2>
-      <ol class="steps">
-        <li><b>온라인 신청</b><span>아래 버튼을 눌러 회사명, 성명, 연락처, 희망 교육 주제, 가능한 일정을 적어 주세요.</span></li>
-        <li><b>일정 안내</b><span>신청 현황을 모아 교육 날짜를 정한 뒤 연락드립니다.</span></li>
-        <li><b>교육 참여</b><span>안내받은 날짜에 AI허브센터로 오시면 됩니다.</span></li>
-      </ol>
+      <div class="course">
+        <h4><span class="tag lv2">중급</span>데이터 분석과 업무 효율화</h4>
+        <p>Excel 자료 분석·시각화, 반복 업무를 줄이는 방법 찾기</p>
+      </div>
+      <div class="course">
+        <h4><span class="tag lv3">고급</span>직무별 활용과 내 업무에 AI 적용</h4>
+        <p>하시는 일(제조·보건·경영·복지 등)에 맞춘 실습, 본인 업무로 AI 활용 사례 만들기</p>
+      </div>
+      <p class="note">※ 세부 내용은 참여하시는 분들의 직무와 수요에 맞춰 조정될 수 있습니다.</p>
     </div>
   </section>
 
   <section>
     <div class="wrap">
       <h2>자주 묻는 질문</h2>
-      <details><summary>AI를 한 번도 안 써 봤는데 괜찮을까요?</summary><p>네, 괜찮습니다. 처음 쓰시는 분을 기준으로 기본 사용법부터 함께 진행합니다.</p></details>
-      <details><summary>비용이 드나요?</summary><p>교육비는 없습니다. AID전환중점전문대학지원사업으로 운영되는 교육입니다.</p></details>
-      <details><summary>같은 회사 직원 여러 명이 신청해도 되나요?</summary><p>네, 가능합니다. 함께 오시는 분도 각자 신청해 주세요.</p></details>
-      <details><summary>교육 날짜는 언제인가요?</summary><p>신청해 주신 가능 일정을 모아 학과와 협의해 정하고, 확정되면 개별로 연락드립니다.</p></details>
-    </div>
-  </section>
-
-  <section class="apply">
-    <div class="wrap">
-      <h2>참가 신청</h2>
-      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdHr-Ex0Y5-UB8LRKUg2V6JEqo8_GNEsuNsfs8f7ro4Y-r97g/viewform">참가 신청하기</a>
-      <img class="qr" src="data:image/png;base64,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" alt="참가 신청 QR 코드">
-      <p class="qr-note">휴대전화 카메라로 QR 코드를 찍어도 신청할 수 있습니다.</p>
+      <details class="faq"><summary>AI를 한 번도 안 써 봤는데 괜찮을까요?</summary><p>네, 괜찮습니다. 기초 과정은 처음 쓰시는 분을 기준으로 기본 사용법부터 진행합니다.</p></details>
+      <details class="faq"><summary>비용이 드나요?</summary><p>교육비는 없습니다. AID전환중점전문대학지원사업으로 운영되는 교육입니다.</p></details>
+      <details class="faq"><summary>저녁반에서 기초를 안 듣고 중급부터 들어도 되나요?</summary><p>가능합니다. 다만 AI를 처음 써 보신다면 월요일 기초부터 들으시길 권합니다.</p></details>
+      <details class="faq"><summary>신청한 날 못 가게 되면 어떻게 하나요?</summary><p>AI허브센터(051-860-3117)로 미리 알려 주시면 다른 분께 자리를 넘겨 드릴 수 있습니다.</p></details>
     </div>
   </section>
 </main>
